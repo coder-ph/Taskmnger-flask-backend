@@ -4,7 +4,7 @@ from middlewares.authentication import auth_required
 from startup.loggings import logger
 
 
-class userController:
+class UserController:
     def register(self):
       try:
           data = request.get_json()

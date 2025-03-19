@@ -1,6 +1,6 @@
 from sqlalchemy.exc import SQLAlchemyError
 from startup.loggings import logger
-from models import User
+from Models.user import User
 from database import db
 
 class UserRepository:

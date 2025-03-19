@@ -1,5 +1,5 @@
 from sqlalchemy.exc import SQLAlchemyError
-from models.task import Task
+from Models.task import Task
 from database import db
 
 class TaskRepository:
