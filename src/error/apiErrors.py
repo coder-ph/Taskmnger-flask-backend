@@ -1,6 +1,6 @@
-from flask import jsonify
+
 import datetime
-from startup.logging import logger
+from Backend.src.startup.loggings import logger
 
 
 class ApiError(Exception):
@@ -9,7 +9,7 @@ class ApiError(Exception):
         self.message = message
         self.status_code = status_code
         self.error_code = error_code
-        self.timestamp = datetime.datetime.utcnow()
+        self.timestamp = datetime.datetime.now(datetime.timezone)
         logger.error(f"{self.__class__.__name__}: {message}")
         
     def to_dict(self):
