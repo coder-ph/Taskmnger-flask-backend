@@ -5,7 +5,7 @@ class Hash:
     def hash_password(password):
         if not password:
             raise ValueError ('password cannot be empty')
-        return generate_password_hash(password, method="pbkdf2:sha512ghlzpp!", salt_length=16)
+        return generate_password_hash(password, method="pbkdf2:sha512", salt_length=16)
     
     @staticmethod
     def verify_password(hashed_password, password):

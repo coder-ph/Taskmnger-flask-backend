@@ -8,4 +8,4 @@ class Task(db.Model):
     description = db.Column(db.String(1000), nullable=False)
     due_date = db.Column(db.Date)
     status = db.Column(db.String(20), default="Pending")
-    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
