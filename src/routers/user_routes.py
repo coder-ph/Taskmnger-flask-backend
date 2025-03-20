@@ -1,8 +1,8 @@
 from flask import Blueprint
-from handlers.controllers.user_controller import UserController
-from services_layer.auth.auth import AuthService
-from startup.loggings import logger
-from handlers.middlewares.authentication import auth_required
+from src.handlers.controllers.user_controller import UserController
+from src.services_layer.auth.auth import AuthService
+from src.startup.loggings import logger
+from src.handlers.middlewares.authentication import auth_required
 
 user_blueprint = Blueprint("user", __name__)
 user_controller = UserController()

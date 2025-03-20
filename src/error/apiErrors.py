@@ -1,6 +1,6 @@
 
 import datetime
-from Backend.src.startup.loggings import logger
+from src.startup.loggings import logger
 
 
 class ApiError(Exception):

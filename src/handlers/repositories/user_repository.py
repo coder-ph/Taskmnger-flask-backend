@@ -1,7 +1,7 @@
 from sqlalchemy.exc import SQLAlchemyError
-from startup.loggings import logger
-from Models.user import User
-from database import db
+from src.startup.loggings import logger
+from src.Models.user import User
+from src.database import db
 
 class UserRepository:
     @staticmethod

@@ -1,6 +1,6 @@
 from flask import jsonify, request
-from services.task_service import TaskService
-from middlewares.authentication import auth_required
+from src.handlers.services.task_service import TaskService
+from src.handlers.middlewares.authentication import auth_required
 
 class TaskController:
     @auth_required

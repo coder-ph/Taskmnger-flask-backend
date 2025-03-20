@@ -1,6 +1,6 @@
 from functools import wraps
 from flask import request, jsonify
-from services_layer.auth.auth import AuthService
+from src.services_layer.auth.auth import AuthService
 
 def auth_required(f):
     @wraps(f)

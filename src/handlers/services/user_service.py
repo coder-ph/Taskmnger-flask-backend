@@ -1,8 +1,8 @@
-from startup.loggings import logger
-from repositories.user_repository import UserRepository
-from services_layer.utilities.hash import Hash
-from services_layer.auth.auth import AuthService
-from  error.apiErrors import InvalidAccessError
+from src.startup.loggings import logger
+from src.handlers.repositories.user_repository import UserRepository
+from src.services_layer.utilities.hash import Hash
+from src.services_layer.auth.auth import AuthService
+from  src.error.apiErrors import InvalidAccessError
 
 class UserService:
     @staticmethod

@@ -1,5 +1,5 @@
 from flask import Blueprint
-from  handlers.controllers.task_controller import TaskController
+from  src.handlers.controllers.task_controller import TaskController
 
 task_blueprint = Blueprint('task', __name__)
 task_controller = TaskController()

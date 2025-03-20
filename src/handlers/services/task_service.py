@@ -1,4 +1,4 @@
-from repositories.task_repository import  TaskRepository
+from src.handlers.repositories.task_repository import  TaskRepository
 
 class TaskService:
     @staticmethod

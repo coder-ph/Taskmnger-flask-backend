@@ -1,6 +1,6 @@
 import jwt
 from datetime import datetime, timedelta
-from config.config import Config
+from src.config.config import Config
 
 class AuthService:
     @staticmethod

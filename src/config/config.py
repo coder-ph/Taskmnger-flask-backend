@@ -1,1 +1,1 @@
-from config_map import Config
+from src.config.config_map import Config

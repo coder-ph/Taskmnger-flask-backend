@@ -1,6 +1,6 @@
 from sqlalchemy.exc import SQLAlchemyError
-from Models.task import Task
-from database import db
+from src.Models.task import Task
+from src.database import db
 
 class TaskRepository:
     @staticmethod

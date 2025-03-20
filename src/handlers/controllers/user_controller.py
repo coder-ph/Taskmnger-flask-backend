@@ -1,7 +1,7 @@
 from flask import request, jsonify, make_response
-from services.user_service import UserService
-from middlewares.authentication import auth_required
-from startup.loggings import logger
+from src.handlers.services.user_service import UserService
+from src.handlers.middlewares.authentication import auth_required
+from src.startup.loggings import logger
 
 
 class UserController:
