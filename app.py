@@ -1,8 +1,6 @@
 from flask import Flask
 from src.config.config_map import Config
 from src.startup.routes import register_routes
-from src.Models.user import User
-from src.Models.task import Task
 from src.database import db
 from flask_migrate import Migrate
 from src.seeding.seed import run_seeding
@@ -25,4 +23,4 @@ with app.app_context():
         run_seeding()
     
 if __name__ == "__main__":
-    app.run(debug=True, port=5555)
+    app.run(host="0.0.0.0")
