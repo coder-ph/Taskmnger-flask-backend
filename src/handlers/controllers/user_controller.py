@@ -38,10 +38,10 @@ class UserController:
             return response
         except ValueError as e:
             logger.error(f"Login failed: {e}")
-            return jsonify({"error": str(e)}), 400
+            return jsonify({"error": str(e)}), 401
         except Exception as e:
             logger.error(f"Unexpected error occured during loggin: {e}")
-            return jsonify({"error: login failed"}), 500
+            return jsonify({"error": "login failed"}), 500
         
     @auth_required
     def get_profile(self):

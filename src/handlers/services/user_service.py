@@ -28,7 +28,7 @@ class UserService:
                 raise InvalidAccessError("email not found")
             if not Hash.verify_password(user.password, data['password']):
                 raise InvalidAccessError ("Incorrect password")
-            token = AuthService.generate_token(user.id)
+            token = AuthService.generate_token(user.id, user.role)
             logger.info(f'user logged in : {user.email}')
             return token
         except Exception as e:
