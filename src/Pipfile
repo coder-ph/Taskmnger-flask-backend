@@ -10,6 +10,7 @@ psycopg2-binary = "*"
 flask-migrate = "*"
 python-dotenv = "*"
 jwt = "*"
+redis = "*"
 
 [dev-packages]
 

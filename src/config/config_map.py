@@ -8,5 +8,6 @@ class Config:
     SECRET_KEY = os.getenv("SECRET_KEY")
     JWT_COOKIE_SECURE = True
     JWT_COOKIE_HTTPONLY = True
+    REDIS_URL= os.getenv("REDIS_URL","redis://redis:6379/0" )
     
     print("Loaded DATABASE URI:", SQLALCHEMY_DATABASE_URI) 
